@@ -1,0 +1,180 @@
+.about{
+    text-align: center;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.title{
+    font-size: 50px;
+    margin: 20px 0;
+}
+.about-faith{
+    width: 100%;
+    height: 700px;
+}
+.subtitle{
+    font-size: 18px;
+    color: #999;
+}
+.img-show{
+    margin-top: 1px;
+}
+
+
+/* 旋轉45度實現菱形 */
+.about-faith ul{
+    position: relative;
+}
+.about-faith ul li{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    margin-top: 100px;
+}
+/* 將圖片顯示出來 */
+.box1{
+    background: url(../images/10.png)no-repeat ;
+    top: 0;
+    left:100px;
+}
+.box2{
+    background: url(../images/11.png)no-repeat ;
+    top:0;
+    left: 390px;
+}
+.box3{
+    background: url(../images/12.jpg)no-repeat ;
+    top:0;
+    left: 680px;
+}
+.box4{
+    background: url(../images/13.jpg)no-repeat ;
+    top:0;
+    left: 970px;
+}
+.box5{
+    background: url(../images/14.jpg)no-repeat ;
+    top:150px;
+    left: 245px;
+}
+.box6{
+    background: url(../images/15.jpg)no-repeat ;
+    top:150px;
+    left:535px;
+}
+.box7{
+    background: url(../images/10.png)no-repeat ;
+    top:150px;
+    left: 825px;
+}
+
+/* 顯示的內容旋轉 */
+.about-faith ul li span{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+/* 將p標籤隱藏起來 */
+.about-faith ul li p{
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+    background-color: var(--bgcolor);
+}
+.about-faith ul li:hover p{
+    opacity: 1;
+    transition: all 1s;
+    /* background-color: var(--bgcolor); */
+}
+
+.about-leading{
+    position: relative;
+}
+.about-leading ul{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;                 /*改變行列排列的順序*/
+    grid-template-columns: repeat(2,230px);
+    grid-template-rows: repeat(3,120px);
+    justify-content: space-between;
+    gap: 10px;
+    counter-reset: count;
+}
+.about-leading ul li{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    text-align: left;
+    position: relative;
+}
+.about-leading ul li::before{
+    counter-increment: count;
+    content: counter(count);
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    padding: 6px 10px;
+    position: absolute;
+    left: 14px;
+    top:41px;
+}
+.img-show{
+    position: absolute;
+    top: 125px;
+    left: 244px;
+}
+.img-show img{
+    width: 793px;
+    height: 381px;
+}
+.about-leading .selected{
+    background: var(--bgcolor);
+    color: #fff;
+}
+.about-leading .selected::before{
+    border: 1px solid #fff;
+}
+
+
+.about-ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.about-ul li{
+    margin: 0 1px;
+    position: relative;
+    width: 250px;
+    height: 480px;
+}
+.about-ul li img{
+    width: 250px;
+    height: 480px;
+    border-radius: 15px;    
+}
+.about-ul li span{
+    background: url(../images/home_bg01.png)no-repeat;
+    position: absolute;
+    top: -50px;
+    left: 70px;
+    width: 106px;
+    font-size: 18px;
+    padding: 40px 0 55px 0;
+    color: #c91111;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+

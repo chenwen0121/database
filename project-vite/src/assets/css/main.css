@@ -1,0 +1,238 @@
+.index_title{
+    text-align: center;
+}
+.index_title h3{
+    font-size: 42px;
+    font-weight: 700;
+}
+.index_title p{
+    font-size: 20px;
+    color: #666;
+    padding: 20px;
+}
+.advantage-item1 ul,
+.advantage-item2 ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.advantage-item1 .advantage-num{
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+}
+.advantage-item1 li span{
+    font-size: 20px;
+    color: #999;
+    font-weight: 400;
+}
+
+/************品牌優勢****************/
+.container_bg{
+    margin-bottom: 50px;
+}
+.advantage-item2 ul li{
+    text-align: center;
+    width: calc(100%/4);
+    margin: 0 20px;
+}
+.advantage-item2 i{     /*行內元素 要轉換*/
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 2px solid var(--bgcolor);
+    border-radius: 50%;
+    font-size: 50px;
+    color: var(--bgcolor);
+}
+.advantage-item2 h4{
+    font-size: 24px;
+    padding: 20px 0;
+}
+.advantage-item2 p{
+    color: #666;
+}
+.advantage-item2 i:hover{
+    animation: shake .5s;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(25deg);
+    }
+    25%{
+        transform: rotate(-25deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+/************實景案例-彈性****************/
+/* .renovation-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px
+}
+.renovation-list ul li{
+    width: calc(100%/3 - 40px);
+    border: 1px solid #ccc;
+} */
+
+/* 網格布局實現九宮格 */
+.renovation-list ul{
+    width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+.renovation-list ul li{
+    width: calc(1280px/3 - 40px);
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.renovation-img{
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+}
+.renovation-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+}
+.renovation-box{
+    padding: 20px;
+}
+.renovation-box h3{
+    font-size: 18px;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.renovation-box-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.renovation-box-info p{
+    color: #999;
+}
+.renovation-box-info span{
+    color: var(--bgcolor);
+}
+
+
+/* 思路:1.移入li時出現陰影*/
+.renovation-list ul li:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+/* 2.移入時圖片變大 */
+.renovation-list ul li:hover .renovation-img img{
+    transform: scale(1.1);
+
+}
+/* 3.圖片顏色變深 */
+.renovation-hover{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0;
+}
+.renovation-list ul li:hover .renovation-hover{
+    opacity: 1;
+    width: 100%;
+    height: 225px;
+    background-color: rgba(0,0,0,.4);
+}
+/* 4.移入時,方框動畫 */
+.renovation-hover::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    transition: all .2s;
+}
+.renovation-list ul li:hover .renovation-hover::before{
+    content: '';
+    border: 1px solid #fff;
+    width: 70%;
+    height: 60%;
+}
+/* 5.查看詳情動畫 */ 
+.renovation-hover span{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,30px);
+}
+.renovation-list ul li:hover .renovation-hover span{
+    transform: translate(-50%,-50%);
+    transition: all .2s;
+}
+
+/************裝潢資訊***************/
+.container{
+    margin-bottom: 50px;
+}
+.information-list{
+    display: flex;
+    height: 380px;
+    gap:0 30px;
+}
+.information-left{
+    width: 40%;
+}
+.information-right{
+    width: 60%;
+}
+.information-right ul{
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.information-right ul li{
+    display: flex;
+    gap: 0 20px;
+    height: calc(380px / 3 - 20px);
+}
+.information-right ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.information-r-img{
+    width: 170px;
+    flex-shrink: 0;
+}
+.information-r-list h4{
+    font-size: 16px;
+}
+.information-time{
+    color: #999;
+    margin-top: 10px;
+}
+.information-text{
+    color: #666;
+    margin-top: 10px;
+}

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "create-git": "^1.2.2"
+  }
+}

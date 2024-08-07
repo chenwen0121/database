@@ -1,0 +1,9 @@
+.kit_title{
+    font-size: 40px;
+    margin: 50px 90px;
+    color: #C99F5F;
+    text-align: center;
+}
+#kit_box li img{
+    border-radius: 40px;
+}

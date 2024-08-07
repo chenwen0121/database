@@ -1,0 +1,13 @@
+{
+    "bannerlist" : [
+        { "id": 1, "img_url": "banner.jpg" },
+        { "id": 2, "img_url": "banner1.jpg" },
+        { "id": 3, "img_url": "banner2.jpg" }
+    ],
+    "advantagelist" : [
+        {"num":50,"name":"萬+菁英家庭選擇"},
+        {"num":20,"name":"個城市直營分公司"},
+        {"num":98,"name":"家直營店面"},
+        {"num":26,"name":"個服務城市"}
+    ]
+}

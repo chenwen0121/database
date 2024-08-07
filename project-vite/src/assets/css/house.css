@@ -1,0 +1,67 @@
+.house-title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.house-sub{
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.house-tabs ul{
+    display: flex;
+    justify-content: space-between;
+}
+.house-tabs ul li{
+    margin-left: 10px;
+}
+.house-tabs ul li img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+.house-tabs ul li span{
+    font-weight: 700;
+    margin-top: 10px;
+}
+.house-grid{
+    margin-bottom: 25px;
+}
+.house-grid ul{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12,1fr);   /*先分成12等分  1fr 均分*/
+    grid-template-areas: 'li1 li1 li1 li1 li1 li1 li3 li3 li3 li4 li4 li4'
+                         'li1 li1 li1 li1 li1 li1 li2 li2 li2 li4 li4 li4'
+                         'li1 li1 li1 li1 li1 li1 li2 li2 li2 li4 li4 li4'
+                         'li1 li1 li1 li1 li1 li1 li2 li2 li2 li4 li4 li4'
+                         'li1 li1 li1 li1 li1 li1 li2 li2 li2 li5 li5 li5'
+                         'li1 li1 li1 li1 li1 li1 li2 li2 li2 li5 li5 li5';
+}
+.li1{
+    grid-area: li1;
+}
+.li2{
+    grid-area: li2;
+}
+.li3{
+    grid-area: li3;
+}
+.li4{
+    grid-area: li4;
+}
+.li5{
+    grid-area: li5;
+}
+.house-grid ul img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.house-carousel img{
+    width: calc(100%/4 - 20px);
+    margin: 0 10px;
+    height: 280px;
+    object-fit: cover;
+}

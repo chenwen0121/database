@@ -1,0 +1,79 @@
+.container-process{
+    margin-bottom: 50px;
+}
+.title{
+    font-size: 40px;
+    margin: 50px 90px;
+    color: #C99F5F;
+    text-align: center;
+}
+.processlist{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.processlist img{
+    width: 800px;
+    height: 300px;
+    opacity: .8;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.el-timeline{
+    --el-timeline-node-color:#C99F5F !important;
+}
+.el-timeline-item__timestamp.is-bottom {
+    margin-top: 20px;
+}
+.el-timeline-item__timestamp {
+    font-size: 16px;
+}
+.processlist .pro1_img{
+    width: 800px;
+    height: 400px;
+    opacity: .8;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.processlist .pro2_img{
+    width: 800px;
+    height: 400px;
+    opacity: .8;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.standard{
+    margin: auto;
+
+}
+.title2{
+    font-size: 40px;
+    margin: 50px 90px;
+    color: #C99F5F;
+    text-align: center;
+}
+.standard ul{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.standard ul li{
+    width: 300px;
+    height: 260px;
+    border: 3px solid #C99F5F;
+    margin-left: 10px;
+    text-align: center;
+}
+.standard ul li img{
+    width: 50%;
+    height:50%;
+    margin: 15px 0 20px 0;
+}
+.standard ul li h4{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
